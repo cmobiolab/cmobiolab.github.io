@@ -59,7 +59,7 @@
     .r-tags{margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.35rem}
     .tag{font-family:'DM Mono',monospace;font-size:0.63rem;letter-spacing:0.06em;padding:0.2em 0.7em;border-radius:3px;background:var(--surface);color:var(--muted);border:1px solid var(--border)}
     #methods{background:var(--surface);padding:7rem 3rem}
-    .methods-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+    .methods-inner{max-width:800px;margin:0 auto;display:block}
     .method-list{margin-top:2rem;display:flex;flex-direction:column;gap:0.8rem}
     .method-item{display:flex;align-items:flex-start;gap:1rem;padding:1rem 1.2rem;background:var(--card);border:1.5px solid var(--border);border-radius:8px;transition:border-color 0.2s}
     .method-item:hover{border-color:rgba(91,77,181,0.3)}
@@ -207,23 +207,13 @@
       <h2 class="sec-title">Methods &amp; Software</h2>
       <p class="sec-intro">Our multiscale strategy spans from classical force fields to correlated wavefunction theory, grounded in rigorous physical chemistry.</p>
       <div class="method-list">
-        <div class="method-item"><div class="method-num">01</div><div class="method-text"><strong>Quantum Chemistry</strong> &mdash; DFT, TDDFT, MP2 with PySCF and Gaussian; basis sets up to cc-pVTZ.</div></div>
-        <div class="method-item"><div class="method-num">02</div><div class="method-text"><strong>Molecular Dynamics</strong> &mdash; Classical MD with AMBER (pmemd.cuda) and OpenMM; AMOEBA polarizable FF.</div></div>
-        <div class="method-item"><div class="method-num">03</div><div class="method-text"><strong>QM/MM</strong> &mdash; Electrostatic and polarizable embedding; S-QM/MM (Coutinho/Canuto) methodology.</div></div>
+        <div class="method-item"><div class="method-num">01</div><div class="method-text"><strong>Quantum Chemistry</strong> &mdash; PySCF and Gaussian.</div></div>
+        <div class="method-item"><div class="method-num">02</div><div class="method-text"><strong>Molecular Dynamics</strong> &mdash; AMBER, GROMACS, and OpenMM; advanced FF.</div></div>
+        <div class="method-item"><div class="method-num">03</div><div class="method-text"><strong>QM/MM</strong> &mdash; OpenESPF and Gaussian.</div></div>
         <div class="method-item"><div class="method-num">04</div><div class="method-text"><strong>Spectroscopy</strong> &mdash; Vibronic spectra via DREEM; lineshape functions, Huang-Rhys factors, FFT-based integration.</div></div>
       </div>
     </div>
-    <div class="reveal">
-      <div class="pipe-step-label">Typical Simulation Workflow</div>
-      <div class="pipeline">
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#A8C33A;"></div><div class="pipe-label"><strong>System Setup</strong> &mdash; topology, RESP charges, solvation box</div></div>
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#2E7FA8;"></div><div class="pipe-label"><strong>MD Equilibration</strong> &mdash; minimization &rarr; NVT &rarr; NPT</div></div>
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#2E7FA8;"></div><div class="pipe-label"><strong>Production MD</strong> &mdash; ns&ndash;&mu;s trajectories (GPU)</div></div>
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#E5A820;"></div><div class="pipe-label"><strong>QM/MM Snapshots</strong> &mdash; frame extraction &amp; QM region</div></div>
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#E8622A;"></div><div class="pipe-label"><strong>TDDFT Calculations</strong> &mdash; excited states per snapshot</div></div>
-        <div class="pipe-step"><div class="pipe-dot" style="--pipe-c:#5B4DB5;"></div><div class="pipe-label"><strong>Spectral Analysis</strong> &mdash; DREEM lineshape &amp; Huang-Rhys</div></div>
-      </div>
-    </div>
+
   </div>
 </section>
 
