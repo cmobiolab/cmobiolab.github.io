@@ -112,7 +112,14 @@
     .pub-item:hover{border-left-color:var(--teal)}
     .pub-title{font-weight:700;font-size:0.98rem;color:var(--text);margin-bottom:0.3rem}
     .pub-authors{font-size:0.82rem;color:var(--muted)}
-    .pub-journal{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--orange);margin-top:0.45rem;letter-spacing:0.04em}
+    .pub-journal{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted);margin-top:0.45rem;letter-spacing:0.04em}
+    .pub-doi{color:var(--teal);text-decoration:none;transition:color 0.2s}
+    .pub-doi:hover{color:var(--purple)}
+    .pub-number{font-family:'DM Mono',monospace;font-size:0.68rem;color:var(--muted);margin-bottom:0.25rem;letter-spacing:0.1em}
+    .pub-item{background:var(--card);border:1.5px solid var(--border);border-left:4px solid var(--pub-c,var(--purple));border-radius:0 8px 8px 0;padding:1.3rem 1.6rem;box-shadow:var(--shadow);transition:border-left-color 0.2s}
+    .pub-item:hover{border-left-color:var(--teal)}
+    .pub-title{font-weight:700;font-size:0.98rem;color:var(--text);margin-bottom:0.3rem}
+    .pub-authors{font-size:0.82rem;color:var(--muted);margin-bottom:0.2rem}
     #contact{padding:7rem 3rem;max-width:680px;margin:0 auto;text-align:center}
     .contact-card{background:var(--card);border:1.5px solid var(--border);border-radius:12px;padding:2.5rem;box-shadow:var(--shadow);margin-top:2.5rem}
     .contact-addr{color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
@@ -282,9 +289,49 @@
       <p class="sec-intro">Recent and representative works from the CMOBIO group.</p>
     </div>
     <div class="pub-list">
-      <div class="pub-item reveal" style="--pub-c:#5B4DB5;"><div class="pub-title">Vibronic Absorption Spectra from QM/MM Trajectories: The DREEM Pipeline</div><div class="pub-authors">R. D. Cunha et al.</div><div class="pub-journal">In preparation &middot; 2025</div></div>
-      <div class="pub-item reveal" style="--pub-c:#2E7FA8;"><div class="pub-title">Polarizable QM/MM Modelling of Flavin Photophysics in Aqueous Solution</div><div class="pub-authors">R. D. Cunha et al.</div><div class="pub-journal">In preparation &middot; 2025</div></div>
-      <div class="pub-item reveal" style="--pub-c:#E8622A;"><div class="pub-title">Multiscale Simulation of Photosensitisers for Photodynamic Therapy</div><div class="pub-authors">CMOBIO Group</div><div class="pub-journal">Journal of Chemical Theory and Computation &middot; 2024</div></div>
+
+      <div class="pub-item reveal" style="--pub-c:#5B4DB5;">
+        <div class="pub-number">6</div>
+        <div class="pub-title">Unraveling Charge-Transfer States and Their Ultrafast Dynamics in Artificial Light-Harvesting Complexes</div>
+        <div class="pub-authors">Teixeira Alves Duarte, L.G.; Lamas, I.; B&auml;uerle, D.; Shareef, S.; <strong>Cunha, R.D.</strong>; Curutchet, C.; Curti, M.; Romero, E.</div>
+        <div class="pub-journal"><em>ACS Physical Chemistry Au</em>, v. 6, p. 286&ndash;300, 2026 &middot; <a href="https://doi.org/10.1021/acsphyschemau.5c00098" target="_blank" class="pub-doi">10.1021/acsphyschemau.5c00098</a></div>
+      </div>
+
+      <div class="pub-item reveal" style="--pub-c:#2E7FA8;">
+        <div class="pub-number">5</div>
+        <div class="pub-title">Extending the MST Model to Large Biomolecular Systems: Parametrization of the ddCOSMO-MST Continuum Solvation Model</div>
+        <div class="pub-authors"><strong>Cunha, R.D.</strong>; Romero-T&eacute;llez, S.; Lipparini, F.; Luque, F.J.; Curutchet, C.</div>
+        <div class="pub-journal"><em>Journal of Computational Chemistry</em>, v. 46, p. e70027, 2025 &middot; <a href="https://doi.org/10.1002/jcc.70027" target="_blank" class="pub-doi">10.1002/jcc.70027</a></div>
+      </div>
+
+      <div class="pub-item reveal" style="--pub-c:#A8C33A;">
+        <div class="pub-number">4</div>
+        <div class="pub-title">Synergistic Interaction of Hyperbranched Polyglycerols and Cetyltrimethylammonium Bromide for Oil/Water Interfacial Tension Reduction: A Molecular Dynamics Study</div>
+        <div class="pub-authors">de Almeida, J.M.; Ferreira, C.C.; Bandeira, L.; <strong>Cunha, R.D.</strong>; Coutinho-Neto, M.D.; Homem-de-Mello, P.; Orestes, E.; Nascimento, R.S.V.</div>
+        <div class="pub-journal"><em>Journal of Physical Chemistry B</em>, v. 127, p. 9356&ndash;9365, 2023 &middot; <a href="https://doi.org/10.1021/acs.jpcb.3c01707" target="_blank" class="pub-doi">10.1021/acs.jpcb.3c01707</a></div>
+      </div>
+
+      <div class="pub-item reveal" style="--pub-c:#E8622A;">
+        <div class="pub-number">3</div>
+        <div class="pub-title">Naphthenic Acids Aggregation: The Role of Salinity</div>
+        <div class="pub-authors"><strong>Cunha, R.D.</strong>; Ferreira, L.J.; Orestes, E.; Coutinho-Neto, M.D.; de Almeida, J.M.; Carvalho, R.M.; Maciel, C.D.; Curutchet, C.; Homem-de-Mello, P.</div>
+        <div class="pub-journal"><em>Computation</em>, v. 10, p. 170, 2022 &middot; <a href="https://doi.org/10.3390/computation10100170" target="_blank" class="pub-doi">10.3390/computation10100170</a></div>
+      </div>
+
+      <div class="pub-item reveal" style="--pub-c:#E5A820;">
+        <div class="pub-number">2</div>
+        <div class="pub-title">The Cooperative Effect between Cyclic Naphthenic Acids and Surfactant Enhances the Separation Efficiency</div>
+        <div class="pub-authors"><strong>Cunha, R.D.</strong>; Maciel, C.D.; Homem-de-Mello, P.</div>
+        <div class="pub-journal"><em>Journal of Molecular Liquids</em>, v. 342, p. 117577, 2021 &middot; <a href="https://doi.org/10.1016/j.molliq.2021.117577" target="_blank" class="pub-doi">10.1016/j.molliq.2021.117577</a></div>
+      </div>
+
+      <div class="pub-item reveal" style="--pub-c:#5B4DB5;">
+        <div class="pub-number">1</div>
+        <div class="pub-title">Hyperbranched Polyglycerols Derivatives as Cetyltrimethylammonium Bromide Nanocarriers on Enhanced Oil Recovery Processes</div>
+        <div class="pub-authors">Ferreira, C.C.; Silva, T.B.G.; Francisco, A.D.S.; Bandeira, L.; <strong>Cunha, R.D.</strong>; Coutinho-Neto, M.D.; Homem-de-Mello, P.; Almeida, J.; Orestes, E.; Nascimento, R.S.V.</div>
+        <div class="pub-journal"><em>Journal of Applied Polymer Science</em>, v. 139, p. e51725, 2021 &middot; <a href="https://doi.org/10.1002/app.51725" target="_blank" class="pub-doi">10.1002/app.51725</a></div>
+      </div>
+
     </div>
   </div>
 </section>
