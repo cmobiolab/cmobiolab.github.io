@@ -107,7 +107,19 @@
     .modal-divider{border:none;border-top:1px solid var(--border);margin:1.2rem 0}
     .modal-bio{font-size:0.93rem;color:var(--muted);line-height:1.75}
     .modal-tags{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:0.4rem}
-    #publications{background:var(--bg2);padding:7rem 3rem}
+    #software{background:var(--surface);padding:7rem 3rem}
+    .software-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.4rem;margin-top:0}
+    .sw-card{background:var(--card);border:1.5px solid var(--border);border-radius:10px;padding:1.8rem;box-shadow:var(--shadow);transition:transform 0.25s,box-shadow 0.25s,border-color 0.25s;position:relative;overflow:hidden}
+    .sw-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--purple);border-radius:10px 10px 0 0}
+    .sw-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(91,77,181,0.15);border-color:rgba(91,77,181,0.25)}
+    .sw-header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+    .sw-icon{font-size:1.8rem;flex-shrink:0;margin-top:0.1rem}
+    .sw-name{font-weight:800;font-size:1.1rem;color:var(--text);margin-bottom:0.4rem}
+    .sw-tags{display:flex;flex-wrap:wrap;gap:0.3rem}
+    .sw-desc{font-size:0.88rem;color:var(--muted);line-height:1.65;margin-bottom:1.4rem}
+    .sw-actions{display:flex;gap:0.7rem;flex-wrap:wrap}
+    .sw-btn{display:inline-flex;align-items:center;font-size:0.75rem;padding:0.6em 1.2em}
+        #publications{background:var(--bg2);padding:7rem 3rem}
     .pub-inner{max-width:900px;margin:0 auto}
     .pub-header{margin-bottom:3rem}
     .pub-list{display:flex;flex-direction:column;gap:1rem}
@@ -159,7 +171,7 @@
     <li><a href="#research">Research</a></li>
     <li><a href="#methods">Methods</a></li>
     <li><a href="#team">Team</a></li>
-    <li><a href="#publications">Publications</a></li>
+    <li><a href="#software">Software</a></li><li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -277,6 +289,36 @@
       <div class="t-focus">We welcome motivated students at all levels. MSc, PhD and IC opportunities available.</div>
     </div>
 
+  </div>
+</section>
+
+<section id="software">
+  <div class="pub-inner">
+    <div class="pub-header reveal">
+      <div class="sec-label">Open Source</div>
+      <h2 class="sec-title">Software &amp; Codes</h2>
+      <p class="sec-intro">Open-source tools and pipelines developed by the CMOBIO group. All code is freely available on GitHub.</p>
+    </div>
+    <div class="software-grid">
+
+      <div class="sw-card reveal">
+        <div class="sw-header">
+          <div class="sw-icon">📊</div>
+          <div>
+            <div class="sw-name">VibSpec</div>
+            <div class="sw-tags"><span class="tag">Python</span><span class="tag">QM/MM</span><span class="tag">DREEM</span><span class="tag">Vibronic Spectra</span></div>
+          </div>
+        </div>
+        <p class="sw-desc">Complete pipeline for computing vibronic absorption spectra from polarizable QM/MM molecular dynamics trajectories using the DREEM (Direct Reaction field with ESPF) formalism.</p>
+        <div class="sw-actions">
+          <a href="https://github.com/cmobiolab/VibSpec" target="_blank" class="btn btn-primary sw-btn">
+            <svg height="16" viewBox="0 0 16 16" width="16" fill="currentColor" style="margin-right:0.4em;vertical-align:-2px"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
